@@ -1,1 +1,48 @@
-{"id":"did:web:www.verifiedid.xyz","@context":["https://www.w3.org/ns/did/v1",{"@base":"did:web:www.verifiedid.xyz"}],"service":[{"id":"#linkeddomains","type":"LinkedDomains","serviceEndpoint":{"origins":["https://www.verifiedid.xyz/"]}},{"id":"#hub","type":"IdentityHub","serviceEndpoint":{"instances":["https://hub.did.msidentity.com/v1.0/303cfca7-42e4-496d-93c9-5f9485f62fa3"]}}],"verificationMethod":[{"id":"#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e","controller":"did:web:www.verifiedid.xyz","type":"EcdsaSecp256k1VerificationKey2019","publicKeyJwk":{"crv":"secp256k1","kty":"EC","x":"EPbrax0cvZxmkqVwSbPlUw94m047hePPl8964UBk5z4","y":"b5srAcoXSvF7lNFnyBYsydL57fV7e5RGuAe6DFqsDt0"}}],"authentication":["#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e"],"assertionMethod":["#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e"]}
+{
+    "id": "did:web:www.verifiedid.xyz",
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        {
+            "@base": "did:web:www.verifiedid.xyz"
+        }
+    ],
+    "service": [
+        {
+            "id": "#linkeddomains",
+            "type": "LinkedDomains",
+            "serviceEndpoint": {
+                "origins": [
+                    "https://www.verifiedid.xyz/"
+                ]
+            }
+        },
+        {
+            "id": "#hub",
+            "type": "IdentityHub",
+            "serviceEndpoint": {
+                "instances": [
+                    "https://hub.did.msidentity.com/v1.0/303cfca7-42e4-496d-93c9-5f9485f62fa3"
+                ]
+            }
+        }
+    ],
+    "verificationMethod": [
+        {
+            "id": "#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e",
+            "controller": "did:web:www.verifiedid.xyz",
+            "type": "EcdsaSecp256k1VerificationKey2019",
+            "publicKeyJwk": {
+                "crv": "secp256k1",
+                "kty": "EC",
+                "x": "EPbrax0cvZxmkqVwSbPlUw94m047hePPl8964UBk5z4",
+                "y": "b5srAcoXSvF7lNFnyBYsydL57fV7e5RGuAe6DFqsDt0"
+            }
+        }
+    ],
+    "authentication": [
+        "#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e"
+    ],
+    "assertionMethod": [
+        "#a5582cfa0d234b6cb9a24cedc8f3d393vcSigningKey-8526e"
+    ]
+}
