@@ -1,48 +1,48 @@
 {
-    "id": "did:web:www.verifiedid.xyz",
+    "id": "did:web:purple-moss-0d77d0f00.3.azurestaticapps.net",
     "@context": [
-      "https://www.w3.org/ns/did/v1",
-      {
-        "@base": "did:web:www.verifiedid.xyz"
-      }
+        "https://www.w3.org/ns/did/v1",
+        {
+            "@base": "did:web:purple-moss-0d77d0f00.3.azurestaticapps.net"
+        }
     ],
     "service": [
-      {
-        "id": "#linkeddomains",
-        "type": "LinkedDomains",
-        "serviceEndpoint": {
-          "origins": [
-            "https://www.verifiedid.xyz/"
-          ]
+        {
+            "id": "#linkeddomains",
+            "type": "LinkedDomains",
+            "serviceEndpoint": {
+                "origins": [
+                    "https://purple-moss-0d77d0f00.3.azurestaticapps.net/"
+                ]
+            }
+        },
+        {
+            "id": "#hub",
+            "type": "IdentityHub",
+            "serviceEndpoint": {
+                "instances": [
+                    "https://hub.did.msidentity.com/v1.0/e6af3e2d-2ff2-494b-98c5-03c9d26ee760"
+                ]
+            }
         }
-      },
-      {
-        "id": "#hub",
-        "type": "IdentityHub",
-        "serviceEndpoint": {
-          "instances": [
-            "https://hub.did.msidentity.com/v1.0/303cfca7-42e4-496d-93c9-5f9485f62fa3"
-          ]
-        }
-      }
     ],
     "verificationMethod": [
-      {
-        "id": "#1657bf96947d418aa12598fd1678b604vcSigningKey-c2c6a",
-        "controller": "did:web:www.verifiedid.xyz",
-        "type": "EcdsaSecp256k1VerificationKey2019",
-        "publicKeyJwk": {
-          "crv": "secp256k1",
-          "kty": "EC",
-          "x": "X1wcbNDE6qeopo2jUXmhRrQVjGeK-FYBF-9jgsI673Y",
-          "y": "gEWlc1wF21Nf7KTDqxWin7U7Km-0UXWHPmRnPS5JIX4"
+        {
+            "id": "#e8334df0f9b342eca01d5f3322fcee1evcSigningKey-fd09e",
+            "controller": "did:web:purple-moss-0d77d0f00.3.azurestaticapps.net",
+            "type": "EcdsaSecp256k1VerificationKey2019",
+            "publicKeyJwk": {
+                "crv": "secp256k1",
+                "kty": "EC",
+                "x": "7kIA8imdJ57WxYg_Hpk3F8ps7oX35rCyCufpldKRLVc",
+                "y": "rOqKg73gcb3_ecpFutiUhjPnPiE2czb6KgJA_piPb7o"
+            }
         }
-      }
     ],
     "authentication": [
-      "#1657bf96947d418aa12598fd1678b604vcSigningKey-c2c6a"
+        "#e8334df0f9b342eca01d5f3322fcee1evcSigningKey-fd09e"
     ],
     "assertionMethod": [
-      "#1657bf96947d418aa12598fd1678b604vcSigningKey-c2c6a"
+        "#e8334df0f9b342eca01d5f3322fcee1evcSigningKey-fd09e"
     ]
-  }
+}
